@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .imp1{
+            background-image: url(image/om.png) ;
+            background-size: cover;
+            height: 558px;
+          
+            
+        }
+        .gap{
+            margin-top: 134px;
+        }
+        .part{
+            background-image: url(https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80) ;
+            background-size: cover;
+            height: 500px;
+            opacity: 0.5;
+            margin-top: 30px;
+          
+            
+        }
+        .pportfolio{
+            
+            background-image: url(https://www.adobe.com/express/create/media_1579406bcc4d2ed2df42e675a090e1ea05ffa8acf.jpeg?width=750&format=jpeg&optimize=medium) ;
+            background-size: cover;
+            height: 558px; 
+          
+          
+            
+        }
+
+
+
+    
+
+        .immp{
+            color: blueviolet;
+            animation-name: examples;
+            animation-duration:4s ;
+            animation-iteration-count: infinite ;
+            position: absolute;
+        }
+        @keyframes examples {
+            0%{
+                left:0px;
+                top:0px;
+                color:black;
+            }
+            100%{
+                left:300px;
+                top:0px;
+                color:blue;
+            }
+          
+         }
+         .pics{
+            background-image: url(image/iimgg1.png);
+            animation-name: example;
+            animation-duration:4s ;
+            animation-iteration-count: infinite ;
+            position: absolute;
+        }
+        @keyframes example {
+            0%{
+               image:url(image/iimgg.png)
+             
+            }
+            25%{
+               image:url(image/iimgg2.png)
+            }
+            50%{
+                image:url(image/iimgg3.png)
+            }
+            100%{
+                image:url(image/iimgg4.png)
+            }
+          
+         }
+         .test {
+                    width: 85px;
+                   height: 89px;
+                   background-color: white;
+                 
+                  
+  }
+           .card1{
+              
+              height: 294px;
+              background-color: grey;
+             
+  }
+  .icon{
+    background-image:url("https://static.vecteezy.com/system/resources/previews/000/570/073/original/vector-desktop-computer-icon.jpg") ;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+   background-size: cover;
+
+   
+   margin-top:20px;
+}  
+   .icon:hover{
+     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///8AAIAAAHvr6/UNDYWgoMJNTZeQkL5zc7D29vwdHYcsLIwAAHkAAHcAAIH39/uoqM3Gxt2Kirw6OpCWlsIHB4WwsNJSUp+kpMvn5/Ly8vqensc4OJLZ2elUVJ26utlMTJ0ZGYlhYaFtbauBgbjAwNsnJ4+RkbxcXKUhIYjU1OcyMpFNTZ5CQpetrc9jY6hAmrwFAAADqklEQVR4nO3dbVeqQBSGYdxSHXVARZMoU9Gg0mP9/393wF60owxJyuzZPffnls21RlAnm3EchBBCCCGEGHfbtKvbo3D9IBzErl3FgzDof4+ZhKSIGvZF2bj/JmW87vDas1H3EXnXw64OOGor02P8cao9KvQ1Q/t9eSpsHgb2rbz6DkXUPwTsyZjAt1RvH3gjCZgRb/aAnukxnTjvP2JfGjAjfrkWI9/0eM6QH+0IQyl30d0o3LmNynuO5nmfN9SW6aGcrda7MJD4HM2j4A14a3ogZ+zt49SdrNf63dTdRjg2PY4zNs6B91Kvwjy6z4RXooVXmXAiWjhxnK7EN2zb/K4TyXw/85EXOVO5rxV5aur0JF+G2YXYcy6ECy9KhcS9UuFQ9yNEg+CKd8FAiyyZQxosD63KMWu51hG0QpqZHvw3m2kMWqGr/QsAo7puNeGhVVWmFa9m6+cwKn9oJkXV5nBly5M0e5quKgkvTY/7iC4hhJB9EELIPwgh5B+EEPIPQgj5ByGE/IMQQv5BCCH/IISQfxBCyD8IIeQfhBDyD0II+QchhPyDEEL+QQgh/yCEkH8QQsg/CCHkH4QQ8g9CCPkHIYT8gxBC/kEIIf8ghJB/EELIPwgh5B+EEPIPQgj5B+HhZqaHfUSzSsKORbsKdioJSfzOkJsd2+2oeOf8kl12bZnE4iks22U3PerYRGO1nqvustsgf9oq/wWGa039yjslZ6l4/od381i7bf6v2LFc/q7zog4F3E/1nES4MPkFJ3jIP4XFmUu+1dA8e8UcSr4Q1TATRqLncPPWWnN2gu29n1/xIvdpql42QsF3U/99mULYUcDbtocCx6aHcqbiz49Yicz3NV6y/RS5kHg7pcXO5+RuKo9I6ZfVUIEHWW6Or9xJ3MHcX4/lzpvKmkWa7q9Z9XVLVpZF/t4M5kUdKa/8qlO0lv3gSZhG8h4KfPktda1sN5Ka3RcDs5JJ2Qok64gmida3mccg9ZSFTCLlpYF+/j5rjh6f0tgmJMXp0+Oo+T3eSXquMMrnGsf341rtCsI2/79zbYMQQv5BCCH/IISQfxBCyD8IIeQfhPYLZaxiLIfFX/pcuBWE7qL4AYfL2n3N0Kv+pc+CdA/ohXUupOVAt+61RnLrJY7rX0ylcZ1AI19t8MrX60/Xq4n1cHqtUbg2AGw01vUBi/+R6qzV+K9mEEIIIYQQQgghhBDaITTy2aJO4cp3689f1bjJQ9NM9QERQgghhBA6cf8AVCGJW7wJT3sAAAAASUVORK5CYII=);
+   }  
+   .icon2{
+    background-image:url("https://icon-library.com/images/web-development-icon-png/web-development-icon-png-9.jpg");
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 41px;
+    margin: auto;
+   background-size: cover;
+   margin-top:20px;
+   }    
+   .icon2:hover{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3NznMDp1WLOeQi9IxLL5pygE5R8W-2UNshK1gq4UYdSu5ynl7BZmA11sWSNb-y_V1ZA&usqp=CAU");
+    width: 40px;
+    height: 41px;
+   
+
+} 
+.slut{
+    background-image:url("https://t3.ftcdn.net/jpg/04/41/45/12/360_F_441451289_jCzGahap2BT8oa9xCEb0zguNPLFLJGqe.jpg");
+   
+    width: 40px;
+    height: 41px;
+    margin: auto;
+   background-size: cover;
+   margin-top:20px;
+}
+
+
+    </style>
+</head>
+<body class="bg-secondary">
+
+    
+<!--row1-->
+
+<div class="container-fluid imp1">
+    <nav class="nav navbar navbar-expand-lg">
+        <div class="container mt-3">
+           
+            <a href="" class="navbar-brand">
+                <strong class="text-dark">PORT</strong>
+                <strong class="text-seconday">FOLIO</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mycollapse">
+                <span class="navbar-togggler-icon"></span>
+            </button>
+            
+                    <div class="collapse navbar-collapse"  id="mycollpase">
+                        <ul class="navbar-nav mx-2 ms-auto">
+                            <li class="nav-item"><a href="" class="nav-link primary">HOME</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-primary">ABOUT</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-primary">SERVICE</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-primary">WORK</a></li>
+                            <li class="nav-item"><a href="" class="nav-link text-primary">BLOG</a></li>
+        
+                        </ul>
+                    </div>
+               
+                
+               
+            
+        </div>
+    
+    
+    </nav>
+    <div class="row">
+        <div class="col-lg-12 bg-dark">
+
+           
+                
+         <div class="w-75 mt-5  my-5 immp">
+            <h2 class= "text-white mt-5">I AM SIDRA ALI KHAN</h2>
+            <h3 class= "text-white mt-5">FREELANCER AND WEB DEVELOPER</h3>
+                   
+                
+              
+            </div> 
+            </div>
+        </div>
+        </div>
+        
+        <!--row2-->
+        <div class="container">
+            
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <div class="row">
+    
+                        <div class="col-lg-6">
+                            <img src="image/gg.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6" >
+                         <p>NAME:  SIDRA ALI KHAN</p>
+                         <br>
+                         <p>PROFILE:  FRONT END DEVELOPER</p>
+                         <br>
+                         <P>EMAIL:  SIDRAWAQAS@gmail.com</P>
+                         <br>
+                         <p>PHONE:   03003467890</p>
+                         
+                        </div>
+                        <div class="col-lg-12">
+                            <h2>SKILLS</h2>
+                             <br>
+                             <h6>HTML 85%</h6>
+                             <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <br>
+                              <h6>CSS 65%</h6>
+                              <div class="progress">
+                                 <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                               </div>
+                               <br> 
+                               <h6>BOOTSTRAP 55%</h6>
+                               <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <br>
+                                <h6>JQUERY 55%</h6>
+                               <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+    
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>ABOUT ME</h3>
+                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsa doloremque unde praesentium reiciendis qui?</p>
+                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quisquam tempora eaque cumque dolore in, recusandae quo dolores quidem quos?</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quasi libero, recusandae assumenda error nemo facere voluptatem, numquam unde reprehenderit porro eaque, ea dignissimos maxime?</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam perferendis libero consequatur! Officiis, quod vero. Fugiat similique expedita consequatur laudantium! Possimus aliquam accusamus enim architecto quisquam modi, sint animi.</p>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aspernatur sequi nisi ipsa quidem fuga officiis sint corporis, est ipsam, quasi dolor dignissimos a distinctio praesentium esse quaerat quis voluptatum fugiat fugit eos nihil aperiam.</p>
+                </div>
+              </div>
+        </div>
+        <!--row3-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mt-5">
+                    <h3 class="text-center">SERVICES</h3>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione praesentium, ullam minus dignissimos animi culpa.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card offset-1">
+                        <div class="test rounded-circle mx-auto mt-3  border border-5 border-primary">
+                          <div class="icon">
+
+                          </div> 
+                        </div>
+                        <div class="card-body">
+                            <h2 class="mt-3">WEB DESIGNER</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero voluptatibus laboriosam necessitatibus ut ipsum illum ipsam quibusdam omnis porro.</p>
+                        </div>
+                    </div>
+                </div> 
+                  <div class="col-lg-3">
+                    <div class="card offset-1">
+                        <div class="test rounded-circle mx-auto mt-3  border border-5 border-primary">
+                          <div class="icon2">
+
+                          </div> 
+                        </div>
+                        <div class="card-body">
+                            <h2 class="mt-3">WEB DEVELOP</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero voluptatibus laboriosam necessitatibus ut ipsum illum ipsam quibusdam omnis porro.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card offset-1">
+                        <div class="test rounded-circle mx-auto mt-3  border border-5 border-primary">
+                          <div class="icon">
+
+                          </div> 
+                        </div>
+                        <div class="card-body">
+                            <h2 class="mt-3">RESPONSIVE DESIGN</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vero voluptatibus laboriosam necessitatibus ut ipsum illum ipsam quibusdam omnis porro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--row4-->
+        <div class="container-fluid part">
+            <div class="container mt-5">
+
+                <div class="row  ">
+               
+                
+                    <div class="col-lg-3 gap">
+                        <div class="test rounded-circle mx-auto mt-3  border border-5 border-primary ms-5 mx-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQneCDIITPxcdQWvbO8BE6xdgoWPGeGcD6EOADzZpwu&ss" alt="" class="img-fluid w-50 mt-3 ms-3 h-25 my-3">
+                        </div>
+                       <div class="ms-5  ps-5 py-3">
+                        <p class="text-white">5</p>
+                        <p class="text-white me-5">YEARS EXPERIENCEE</p>
+                       </div>
+                      
+                    </div>   
+                   <div class="col-lg-3 gap">
+                    <div class="test rounded-circle mx-auto mt-3  border border-5 border-primary ms-5 mx-3">
+                        <img src="data:image/png;base64,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" alt="" class="img-fluid w-50 mt-3 ms-3">
+                    </div>
+                   <div class="ms-5  ps-5 py-3">
+                    <p class="text-white">5</p>
+                    <p class="text-white me-5">TOTAL CLIENTS</p>
+                   </div>
+                  
+                </div>
+                <div class="col-lg-3 gap">
+                    <div class="test rounded-circle mx-auto mt-3  border border-5 border-primary ms-5 mx-3">
+                        <img src="https://static.vecteezy.com/system/resources/previews/006/059/254/original/black-check-mark-icon-tick-symbol-in-black-color-illustration-for-web-mobile-and-concept-design-free-vector.jpg" alt="" class="img-fluid w-50 mt-3 ms-3">
+                    </div>
+                   <div class="ms-5  ps-5 py-3">
+                    <p class="text-white">5</p>
+                    <p class="text-white me-5">WORKS COMPLETED</p>
+                   </div>
+                  
+                </div>
+                <div class="col-lg-3 gap">
+                    <div class="test rounded-circle mx-auto mt-3  border border-5 border-primary ms-5 mx-3">
+                       <div class="slut"></div>
+                    </div>
+                   <div class="ms-5  ps-5 py-3">
+                    <p class="text-white">5</p>
+                    <p class="text-white me-5">TOTAL CLIENTS</p>
+                   </div>
+                  
+                </div>
+                
+            </div>
+          
+        
+            </div>
+           
+
+   </div>
+   <div class="container-fluid pportfolio">
+
+    
+    <div class="row">
+        <h1 class="text-center  gap mt-5 ">PORT-FOLIO DETAIL</h1>
+        <h6 class="text-center text-light">HOME | ABOUT | CONTACT</h6>
+             <div class="col-12 bg-dark p-5">
+
+             </div>
+    </div>
+       
+   
+    
+   
+ 
+     </div>
+   
+   
+
+    
+</body>
+</html>
